@@ -34,6 +34,7 @@ white-space:nowrap;
     box-sizing: border-box;
     display: grid;
     grid-auto-flow: column;
+    justify-content: center;
     align-items: center;
     gap:9px;
 }

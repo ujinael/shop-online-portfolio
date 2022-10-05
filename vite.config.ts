@@ -20,8 +20,10 @@ export default defineConfig({
   },
   
   plugins: [vue(), vueJsx(),legacy({
+    renderLegacyChunks:true,
     targets:['ie >= 11'],
-    additionalLegacyPolyfills: ['regenerator-runtime/runtime']
+    additionalLegacyPolyfills: ['regenerator-runtime/runtime'],
+    polyfills: ["es.array.iterator"]
   })],
   resolve: {
     alias: 

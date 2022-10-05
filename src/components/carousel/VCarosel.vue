@@ -61,8 +61,6 @@
       height: 300px;
       position: relative;
       box-sizing: border-box;
-      // padding: 1rem;
-      background-color: aquamarine;
     }
     .content{
       position: relative;

@@ -29,8 +29,8 @@ gap:1rem;
     color: #555555;
     font-size: 14px;
     text-decoration: none;
-    width: max-content;
-    word-break: keep-all;
+
+white-space:nowrap;    
     box-sizing: border-box;
     display: grid;
     grid-auto-flow: column;
@@ -44,6 +44,11 @@ gap:1rem;
 @media(min-width:599px){
     .contacts{
         grid-auto-flow: column;
+        // gap:15px;
+    }
+}
+@media(min-width:1200px){
+    .contacts{
         gap:54px;
     }
 }

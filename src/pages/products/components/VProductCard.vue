@@ -68,6 +68,7 @@ disabled:"Обрабатывается"
 const {elementVisible:detailVisible,toggleElement:toggleDetail} = useToggle()
 const {priceFormatter} = useStringUtils()
 const showDetail = ()=>{
+if(props.product.status === ProductStatus.AVAILABLE)
 toggleDetail()
 }
 const onSaleButtonClick=()=>{
@@ -134,7 +135,7 @@ line-height: 24px;
 color: #343030;
     }
     .card-discount, .card-coast{
-font-style: italic;
+font-style: normal;
 font-weight: 700;
 font-size: 16px;
 color: #343030;  

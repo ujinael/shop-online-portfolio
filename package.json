@@ -11,6 +11,7 @@
     "generate": "node store-generator.js"
   },
   "dependencies": {
+    "@vitejs/plugin-legacy": "^2.2.0",
     "@vueuse/core": "^9.3.0",
     "class-transformer": "^0.5.1",
     "concurrently": "^7.4.0",

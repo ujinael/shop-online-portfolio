@@ -34,16 +34,16 @@ justify-content: center;
     line-height: 150%;
     text-decoration: none;
     transition: color .3s ease;
- color: #555555;
+ color: #343030;
 }
 .navigation_menu--item>a:active{
-    color: gray;
+    color: #343030;
     text-decoration: none;
     transition: color .3s ease;
 
 }
 .navigation_menu--item>a:visited{
-    color: gray;
+    color: #343030;
     text-decoration: none;
     transition: color .3s ease;
 

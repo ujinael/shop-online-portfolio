@@ -1,9 +1,8 @@
-# shop-online-portfolio
+# sales-front
 Проект опубликован на firebase cloud
 Ссылка https://shop-online-portf.web.app/
 
-
-
+ниже скрипты для запуска локально
 ## Project Setup
 
 ```sh

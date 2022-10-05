@@ -35,10 +35,13 @@ store.searchTerm = searchTerm.value
     font-style: normal;
     font-weight: 400;
     line-height: 21px;
-    font-size: 14px;
-    border: 1px solid #B5B5B5;
+    font-size: 17px;
+    border: 1px solid #E1E1E1;
     border-right: none;
     background-color: transparent;
+  }
+  .search_form--input::placeholder{
+    color:#9F9F9F;
   }
   .search_form--input:focus{
     outline: none;

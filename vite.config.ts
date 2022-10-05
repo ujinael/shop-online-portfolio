@@ -1,9 +1,11 @@
 import { fileURLToPath, URL } from "node:url";
+import legacy from '@vitejs/plugin-legacy'
 
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 export default defineConfig({
+  
   server: {
     port: 3000,
     hmr:{overlay:false},
@@ -16,7 +18,11 @@ export default defineConfig({
       },
     },
   },
-  plugins: [vue(), vueJsx()],
+  
+  plugins: [vue(), vueJsx(),legacy({
+    targets:['ie >= 11'],
+    additionalLegacyPolyfills: ['regenerator-runtime/runtime']
+  })],
   resolve: {
     alias: 
   {

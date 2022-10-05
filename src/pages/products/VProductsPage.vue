@@ -3,7 +3,6 @@
     <div class="page_title">
         <h1>{{pageTitle}}</h1>
     </div>
-    <!-- <div class="products_wrapper"> -->
 <ul class="cards">
   <transition-group name="fade">
     <li class="product" v-for="(product, index) in store.getProductsFilteredByTitle" :key="index">
@@ -12,7 +11,6 @@
   </transition-group>
 
 </ul>
-    <!-- </div> -->
 </div>
 </template>
 <script setup lang="ts">
@@ -39,9 +37,11 @@ onMounted(()=>{
         box-sizing: border-box;
         padding: 45px 0;
         width: 100%;
+        display: grid;
+        gap:39px;
     }
   .page_title{
-    text-align: left;
+    text-align: center;
   }
   .products_wrapper{
     width: 100%;
@@ -52,6 +52,7 @@ onMounted(()=>{
     box-sizing: border-box;
     display: grid;
     justify-content: center;
+    gap:1rem;
   }
   @media(min-width:599px){
     .cards{
@@ -62,6 +63,9 @@ grid-template-columns: repeat(auto-fit,minmax(380px,1fr));
 }
   }
   @media(min-width:1200px){
+    .page_title{
+    text-align: left;
+  }
 .cards{
 
 grid-template-columns: repeat(4,min-content); 

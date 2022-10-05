@@ -29,7 +29,7 @@ width: inherit;
 display: flex;
 justify-content: center; 
 box-sizing: border-box;
-border-bottom: 1px solid #b3b3b3;
+border-bottom: 1px solid #E1E1E1;
 }
 .layout_header--content{
 height: 100%;
